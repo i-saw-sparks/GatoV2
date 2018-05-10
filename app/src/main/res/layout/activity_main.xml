@@ -30,13 +30,16 @@
 
                 <Button
                     android:layout_width="100dp"
-                    android:layout_height="100dp" />
+                    android:layout_height="100dp"
+                    android:id="@+id/b1"/>
 
                 <Button android:layout_width="100dp"
-                    android:layout_height="100dp"/>
+                    android:layout_height="100dp"
+                    android:id="@+id/b2"/>
 
                 <Button android:layout_width="100dp"
-                    android:layout_height="100dp"/>
+                    android:layout_height="100dp"
+                    android:id="@+id/b3"/>
             </TableRow>
 
             <TableRow
@@ -44,14 +47,17 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:layout_height="100dp"/>
+                    android:layout_height="100dp"
+                    android:id="@+id/b4"/>
 
 
                 <Button
-                    android:layout_height="100dp"/>
+                    android:layout_height="100dp"
+                    android:id="@+id/b5"/>
 
                 <Button
-                    android:layout_height="100dp"/>
+                    android:layout_height="100dp"
+                    android:id="@+id/b6"/>
             </TableRow>
 
             <TableRow
@@ -59,15 +65,20 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:layout_height="100dp"/>
+                    android:layout_height="100dp"
+                    android:id="@+id/b7"/>
 
                 <Button
-                    android:layout_height="100dp"/>
+                    android:layout_height="100dp"
+                    android:id="@+id/b8"/>
 
                 <Button
-                    android:layout_height="100dp"/>
+                    android:layout_height="100dp"
+                    android:id="@+id/b9"/>
             </TableRow>
         </TableLayout>
     </LinearLayout>
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
 </LinearLayout>
