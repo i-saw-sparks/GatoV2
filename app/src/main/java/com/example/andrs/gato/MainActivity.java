@@ -101,6 +101,38 @@ public TextView gana;
                 if (bo9.XO==1)
                     gana.setText("Gana player 1");
         //'''''''''''''''''''''''
+        if(bo1.XO==2)
+            if (bo2.XO==2)
+                if (bo3.XO==2)
+                    gana.setText("Gana player 2");
+        if(bo1.XO==2)
+            if (bo5.XO==2)
+                if (bo9.XO==2)
+                    gana.setText("Gana player 2");
+        if(bo1.XO==2)
+            if (bo4.XO==2)
+                if (bo7.XO==2)
+                    gana.setText("Gana player 2");
+        if(bo2.XO==2)
+            if (bo5.XO==2)
+                if (bo8.XO==2)
+                    gana.setText("Gana player 2");
+        if(bo3.XO==2)
+            if (bo5.XO==2)
+                if (bo7.XO==2)
+                    gana.setText("Gana player 2");
+        if(bo3.XO==2)
+            if (bo6.XO==2)
+                if (bo9.XO==2)
+                    gana.setText("Gana player 2");
+        if(bo4.XO==2)
+            if (bo5.XO==2)
+                if (bo6.XO==2)
+                    gana.setText("Gana player 2");
+        if(bo7.XO==2)
+            if (bo8.XO==2)
+                if (bo9.XO==2)
+                    gana.setText("Gana player 2");
 
 
     }
