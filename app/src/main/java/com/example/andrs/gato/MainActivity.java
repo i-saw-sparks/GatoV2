@@ -4,11 +4,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 public Button b1, b2, b3, b4, b5, b6, b7, b8, b9;
 public Butt bo1, bo2, bo3, bo4, bo5, bo6, bo7, bo8, bo9;
 public int player;
+public TextView gana;
 
     void draw1(int XO){
         if(XO==1)
@@ -65,11 +67,50 @@ public int player;
             b9.setBackgroundColor(0xFFD42620);
     }
 
+    void check(){
+        if(bo1.XO==1)
+            if (bo2.XO==1)
+                if (bo3.XO==1)
+                    gana.setText("Gana player 1");
+        if(bo1.XO==1)
+            if (bo5.XO==1)
+                if (bo9.XO==1)
+                    gana.setText("Gana player 1");
+        if(bo1.XO==1)
+            if (bo4.XO==1)
+                if (bo7.XO==1)
+                    gana.setText("Gana player 1");
+        if(bo2.XO==1)
+            if (bo5.XO==1)
+                if (bo8.XO==1)
+                    gana.setText("Gana player 1");
+        if(bo3.XO==1)
+            if (bo5.XO==1)
+                if (bo7.XO==1)
+                    gana.setText("Gana player 1");
+        if(bo3.XO==1)
+            if (bo6.XO==1)
+                if (bo9.XO==1)
+                    gana.setText("Gana player 1");
+        if(bo4.XO==1)
+            if (bo5.XO==1)
+                if (bo6.XO==1)
+                    gana.setText("Gana player 1");
+        if(bo7.XO==1)
+            if (bo8.XO==1)
+                if (bo9.XO==1)
+                    gana.setText("Gana player 1");
+        //'''''''''''''''''''''''
+
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         player=0;
+        gana=(TextView)findViewById(R.id.ganas);
         b1=(Button)findViewById(R.id.b1);
         b2=(Button)findViewById(R.id.b2);
         b3=(Button)findViewById(R.id.b3);
@@ -96,7 +137,7 @@ public int player;
                         if(bo1.block==false){
                             player = bo1.change(player);
                             draw1(bo1.XO);
-
+                            check();
                         }
                     }
                 }
@@ -108,6 +149,7 @@ public int player;
                         if(bo2.block==false){
                             player = bo2.change(player);
                             draw2(bo2.XO);
+                            check();
                         }
                     }
                 }
@@ -119,6 +161,7 @@ public int player;
                         if(bo3.block==false){
                             player = bo3.change(player);
                             draw3(bo3.XO);
+                            check();
                         }
 
                     }
@@ -131,6 +174,7 @@ public int player;
                         if(bo4.block==false){
                             player = bo4.change(player);
                             draw4(bo4.XO);
+                            check();
                         }
 
                     }
@@ -143,6 +187,7 @@ public int player;
                         if(bo5.block==false){
                             player = bo5.change(player);
                             draw5(bo5.XO);
+                            check();
                         }
 
                     }
@@ -155,6 +200,7 @@ public int player;
                         if(bo6.block==false){
                             player = bo6.change(player);
                             draw6(bo6.XO);
+                            check();
                         }
 
                     }
@@ -167,6 +213,7 @@ public int player;
                         if(bo7.block==false){
                             player = bo7.change(player);
                             draw7(bo7.XO);
+                            check();
                         }
 
                     }
@@ -179,6 +226,7 @@ public int player;
                         if(bo8.block==false){
                             player = bo8.change(player);
                             draw8(bo8.XO);
+                            check();
                         }
 
                     }
@@ -191,6 +239,7 @@ public int player;
                         if(bo9.block==false){
                             player = bo9.change(player);
                             draw9(bo9.XO);
+                            check();
                         }
 
                     }
