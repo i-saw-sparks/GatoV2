@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 public Button b1, b2, b3, b4, b5, b6, b7, b8, b9;
 public Butt bo1, bo2, bo3, bo4, bo5, bo6, bo7, bo8, bo9;
 public int player;
+public boolean juego;
 public TextView gana;
 
     void draw1(int XO){
@@ -134,7 +135,8 @@ public TextView gana;
                 if (bo9.XO==2)
                     gana.setText("Gana player 2");
 
-
+        if(gana.getText()!="")
+            juego=false;
     }
 
     @Override
@@ -142,6 +144,7 @@ public TextView gana;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         player=0;
+        juego=true;
         gana=(TextView)findViewById(R.id.ganas);
         b1=(Button)findViewById(R.id.b1);
         b2=(Button)findViewById(R.id.b2);
@@ -166,7 +169,7 @@ public TextView gana;
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        if(bo1.block==false){
+                        if(bo1.block==false&&juego==true){
                             player = bo1.change(player);
                             draw1(bo1.XO);
                             check();
@@ -178,7 +181,7 @@ public TextView gana;
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        if(bo2.block==false){
+                        if(bo2.block==false&&juego==true){
                             player = bo2.change(player);
                             draw2(bo2.XO);
                             check();
@@ -190,7 +193,7 @@ public TextView gana;
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        if(bo3.block==false){
+                        if(bo3.block==false&&juego==true){
                             player = bo3.change(player);
                             draw3(bo3.XO);
                             check();
@@ -203,7 +206,7 @@ public TextView gana;
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        if(bo4.block==false){
+                        if(bo4.block==false&&juego==true){
                             player = bo4.change(player);
                             draw4(bo4.XO);
                             check();
@@ -216,7 +219,7 @@ public TextView gana;
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        if(bo5.block==false){
+                        if(bo5.block==false&&juego==true){
                             player = bo5.change(player);
                             draw5(bo5.XO);
                             check();
@@ -229,7 +232,7 @@ public TextView gana;
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        if(bo6.block==false){
+                        if(bo6.block==false&&juego==true){
                             player = bo6.change(player);
                             draw6(bo6.XO);
                             check();
@@ -242,7 +245,7 @@ public TextView gana;
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        if(bo7.block==false){
+                        if(bo7.block==false&&juego==true){
                             player = bo7.change(player);
                             draw7(bo7.XO);
                             check();
@@ -255,7 +258,7 @@ public TextView gana;
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        if(bo8.block==false){
+                        if(bo8.block==false&&juego==true){
                             player = bo8.change(player);
                             draw8(bo8.XO);
                             check();
@@ -268,7 +271,7 @@ public TextView gana;
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        if(bo9.block==false){
+                        if(bo9.block==false&&juego==true){
                             player = bo9.change(player);
                             draw9(bo9.XO);
                             check();
