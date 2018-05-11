@@ -134,6 +134,8 @@ public TextView gana;
             if (bo8.XO==2)
                 if (bo9.XO==2)
                     gana.setText("Gana player 2");
+        if(bo1.XO!=0&&bo2.XO!=0&&bo3.XO!=0&&bo4.XO!=0&&bo5.XO!=0&&bo6.XO!=0&&bo7.XO!=0&&bo8.XO!=0&&bo9.XO!=0)
+            gana.setText("Gana el gato");
 
         if(gana.getText()!="")
             juego=false;

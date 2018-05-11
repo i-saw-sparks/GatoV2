@@ -6,14 +6,21 @@
     tools:context=".MainActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/back"
+    android:id="@+id/layprin">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="GATO"
         android:textAlignment="center"
         android:textSize="38sp"/>
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,7 +38,6 @@
                 <Button
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-
                     android:id="@+id/b1"/>
 
                 <Button android:layout_width="100dp"
